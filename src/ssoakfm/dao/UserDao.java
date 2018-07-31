@@ -5,15 +5,19 @@
  */
 package ssoakfm.dao;
 
-import ssoakfm.model.User;
+import ssoakfm.model.user.User;
+import ssoakfm.view.login.LoginForm;
+import ssoakfm.view.user.FormNewUser;
+import ssoakfm.view.user.UserPage;
 
 /**
  *
  * @author Osvaldo
  */
 public interface UserDao {
-    public void login(User user);
-    public void addUser(User user);
-    public void deleteUser(User user);
-    public void editUser(User user);
+    public void login(LoginForm loginForm);
+    public void addUser(FormNewUser formNewUser);
+    public void disabledUser(UserPage userPage);
+    public void editUser(FormNewUser formNewUser);
+    public void dataTableUser(UserPage userPage);
 }

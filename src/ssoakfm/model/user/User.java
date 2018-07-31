@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package ssoakfm.model;
+package ssoakfm.model.user;
 
 /**
  *
@@ -11,10 +11,13 @@ package ssoakfm.model;
  */
 public class User {
     private int id;
-    private String username;
+    private String nik;
+    private String name;
     private String password;
     private Roles roles;
+    private byte[] image;
 
+    
     public int getId() {
         return id;
     }
@@ -23,12 +26,12 @@ public class User {
         this.id = id;
     }
 
-    public String getUsername() {
-        return username;
+    public String getNik() {
+        return nik;
     }
 
-    public void setUsername(String username) {
-        this.username = username;
+    public void setNik(String username) {
+        this.nik = username;
     }
 
     public String getPassword() {
@@ -46,6 +49,20 @@ public class User {
     public void setRoles(Roles roles) {
         this.roles = roles;
     }
-    
+
+    public byte[] getImage() {
+        return image;
+    }
+
+    public void setImage(byte[] image) {
+        this.image = image;
+    }
+
+    public String getName() {
+        return name;
+    }
+    public void setName(String name) {
+        this.name = name;
+    }
     
 }
